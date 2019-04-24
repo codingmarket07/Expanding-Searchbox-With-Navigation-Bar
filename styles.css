@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.wrapper .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+  background: #2376aa;
+  height: 60px;
+}
+
+.wrapper .navbar .menu ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.wrapper .navbar .menu ul li a{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.searchbar{
+  position: relative;
+}
+
+.searchbar input[type="text"]{
+  border: 0;
+  padding: 0;
+  width: 0px;
+  height: 35px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.searchbar .icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+}
+
+.searchbar .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.banner img{
+  width: 100%;
+  height: 350px;
+}
+
+.searchbar .icon.active{
+  background: #062333;
+  transition: all 0.3s ease;
+}
+
+.searchbar input[type="text"].active{
+  width: 250px;
+  padding: 0 10px;
+  transition: all 0.5s 0.2s ease;
+}
+
+@media screen and (max-width: 730px){
+  .wrapper .navbar{
+    padding: 0px;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+  .wrapper .navbar .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .searchbar .icon{
+    margin-right: -20px;
+  }
+}

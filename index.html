@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expanding Searchbox With Navigation Bar</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fa-search").click(function(){
+			   $(".icon").toggleClass("active");
+			   $("input[type='text']").toggleClass("active");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="navbar">
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Map</a></li>
+      </ul>
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="search">
+      <div class="icon">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="https://i.imgur.com/XNwuthr.jpg" alt="banner_image">
+  </div>
+</div>
+
+</body>
+</html>
